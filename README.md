@@ -1,6 +1,6 @@
 # 📊 E-Commerce Data Pipeline: End-to-End Analytics Solution
 
-![Project Architecture](images/architecture.png)  
+![Project Architecture](assets/Project%20Architecture.jpg)  
 *Figura 1: Diagrama da arquitetura do projeto*
 
 ## 🔍 Visão Geral
@@ -65,11 +65,11 @@ jupyter notebook ../notebooks/03_export_bi.ipynb
 ## 📈 Resultados
 
 Documentação dbt
-https://images/dbt_lineage.png
+![Documentação dbt](assets/dbt_lineage.png)  
 Figura 2: Linhagem de dados no dbt docs
 
 Dashboard Power BI
-https://images/powerbi_dashboard.png
+![Dashboard Power BI](assets/powerbi_dashboard.png)  
 Figura 3: Visualização analítica final
 
 ## 📌 Melhores Práticas Implementadas
