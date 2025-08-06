@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_customers  # Alterado de inter_customers
+    description: "Dados de clientes extraídos do DuckDB"
+    columns:
+      - name: customer_id
+        description: "ID único do cliente"
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_unique_id  # Alterado de customer_name
+        description: "ID único secundário do cliente"
+        tests:
+          - not_null

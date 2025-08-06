@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: mart_agg_customer_sales
+    description: "Vendas consolidadas por cliente"
+    columns:
+      - name: customer_id
+        description: "ID único do cliente"
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_name
+        description: "Nome do cliente (customer_unique_id)"
+        tests:
+          - not_null
+
+      - name: sales_amount 
+        description: "Valor total histórico gasto pelo cliente (R$)"
+        tests:
+          - not_null
+
+      - name: last_purchase_date
+        description: "Data da última compra"
+        tests:
+          - not_null
+
+      - name: etl_loaded_at
+        description: "Data/hora de processamento"

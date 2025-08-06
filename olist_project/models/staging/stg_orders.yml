@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_orders 
+    description: "Dados de pedidos extraídos do DuckDB"
+    columns:
+      - name: sale_id
+        description: "ID único do pedido"
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: "ID do cliente"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+
+      - name: amount 
+        description: "Valor total do pedido (R$)"
+        tests:
+          - not_null
+
+      - name: sale_date
+        description: "Data/hora da compra"
+        tests:
+          - not_null

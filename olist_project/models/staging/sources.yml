@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: olist_customers_dataset
+        description: "Dados brutos de clientes da Olist"
+        
+      - name: olist_order_payments_dataset
+        description: "Dados brutos de pagamentos de pedidos da Olist"
+
+      - name: olist_orders_dataset  
+        description: "Dados de pedidos"
